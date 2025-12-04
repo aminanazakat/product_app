@@ -23,13 +23,13 @@ export default function CartPage({ isOpen, onClose }) {
     >
       {/* Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <h2>My Cart</h2>
+        <h2 style={{ color: "#363033" }}>My Cart</h2>
         <button
           onClick={onClose}
           style={{
             background: "none",
             border: "none",
-            color: "#fff",
+            color: "#363033",
             fontSize: "18px",
             cursor: "pointer",
           }}
@@ -51,7 +51,7 @@ export default function CartPage({ isOpen, onClose }) {
                 alignItems: "center",
                 marginBottom: "15px",
                 paddingBottom: "10px",
-                borderBottom: "1px solid #f500c0ff",
+                borderBottom: "1px solid #363033",
               }}
             >
               <img

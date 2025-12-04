@@ -29,8 +29,9 @@ export default function ProductDetail() {
       style={{
         display: "flex",
         flexWrap: "wrap",
+        padding: "40px",
         gap: "40px",
-        background: "#fef0faff",
+        background: "#fcebf7ff",
         color: "#ac3273",
         minHeight: "80vh",
         alignItems: "center",
@@ -43,11 +44,10 @@ export default function ProductDetail() {
           src={product.image}
           alt={product.title}
           style={{
-            maxWidth: "100%",
-            maxHeight: "400px",
+            maxWidth: "90%",
+            maxHeight: "350px",
             objectFit: "contain",
             borderRadius: "10px",
-            
           }}
         />
       </div>
