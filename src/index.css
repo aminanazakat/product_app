@@ -113,10 +113,9 @@ body {
   color: #f08ac1;
 }
 
-/* GIRL IMAGE - slides in from right, but contained so face not cut */
 .hero-girl {
   position: absolute;
-  right: -30%;           /* start partially off-screen for animation */
+  right: -30%;           
   bottom: 0;
   z-index: 3;
   width: auto;
