@@ -13,7 +13,7 @@ export default function ProductItem({ product }) {
 
       <div className="card-icons">
         <Link to={`/product/${product.id}`} className="icon-btn">
-          <FaEye />
+          <FaEye /> 
         </Link>
 
         <button className="icon-btn" onClick={() => addToCart(product)}>

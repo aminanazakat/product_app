@@ -10,9 +10,9 @@ export default function CartPage({ isOpen, onClose }) {
         position: "fixed",
         top: 0,
         right: isOpen ? 0 : "-100%",
-        width: "350px",
+        width: "360px",
         height: "100%",
-        background: "#f9d2edff",
+        background: "#f0ecd3",
         color: "#fff",
         boxShadow: "-2px 0 8px rgba(0,0,0,0.5)",
         transition: "right 0.3s ease-in-out",
@@ -29,7 +29,7 @@ export default function CartPage({ isOpen, onClose }) {
           style={{
             background: "none",
             border: "none",
-            color: "#363033",
+            color: "#443e41ff",
             fontSize: "18px",
             cursor: "pointer",
           }}
@@ -40,7 +40,7 @@ export default function CartPage({ isOpen, onClose }) {
 
       {/* Cart Items */}
       {cart.length === 0 ? (
-        <p style={{ marginTop: "20px" }}>Your cart is empty</p>
+        <p style={{ marginTop: "20px",  color: "#443e41ff"}}>Your cart is empty</p>
       ) : (
         <>
           {cart.map((item) => (
@@ -62,8 +62,8 @@ export default function CartPage({ isOpen, onClose }) {
                 style={{ objectFit: "cover", borderRadius: "5px" }}
               />
               <div style={{ marginLeft: "15px", flex: 1 }}>
-                <h4 style={{ margin: 0, fontSize: "14px", color: "#ac3273" }}>{item.title}</h4>
-                <p style={{ margin: "5px 0", fontSize: "14px", color: "#ac3273" }}>${item.price}</p>
+                <h4 style={{ margin: 0, fontSize: "14px", color: "#644b58ff" }}>{item.title}</h4>
+                <p style={{ margin: "5px 0", fontSize: "14px", color: "#30292dff" }}>Price: ${item.price}</p>
               </div>
               <button
                 onClick={() => removeFromCart(item.id)}

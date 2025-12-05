@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffc9ee; 
+  background-color: #f0ecd3; 
   color: #fff;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -110,7 +110,7 @@ body {
 .hero-text p {
   font-size: clamp(1rem, 2.2vw, 1.25rem);
   margin: 0;
-  color: #f08ac1;
+  color: #363033;
 }
 
 .hero-girl {
@@ -120,12 +120,11 @@ body {
   z-index: 3;
   width: auto;
   max-width: 45vw;       
-  max-height: 92vh;      
+  max-height: 85vh;      
   object-fit: contain;   
   animation: slideFromRight 1.2s cubic-bezier(.22,.9,.36,1) forwards;
   opacity: 0;
   transform-origin: right bottom;
-  /* small drop shadow to separate from bg */
   filter: drop-shadow(0 8px 18px rgba(0,0,0,0.35));
 }
 
@@ -136,10 +135,9 @@ body {
 }
 @keyframes slideFromRight {
   0% { right: -40%; opacity: 0; transform: translateY(6%); }
-  100% { right: 4%; opacity: 1; transform: translateY(0); }
+  100% { right: 8%; opacity: 1; transform: translateY(0); }
 }
 
-/* SMALL SCREENS ADJUSTMENTS */
 @media (max-width: 1024px) {
   .hero-section { padding: 0 32px; }
   .hero-girl { max-width: 50vw; right: -10%; }
@@ -162,11 +160,9 @@ body {
   }
 }
 
-
-
-
 .container {
   padding: 20px;
+
 }
 
 .filter-bar {
@@ -180,14 +176,15 @@ body {
   padding: 8px;
   width: 400px;
   background-color: #ffc9ee; 
-  border: 1px solid #ac3273;
   border-radius: 5px;
+  border: 1px solid #4b4849;
+  text-decoration: none;
   color: #000;
 }
 
 .grid {
   display: grid;
-  gap: 20px;
+  gap: 30px;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
 }
 
@@ -211,11 +208,14 @@ body {
 .card h4{
   color: #363033;
   margin: 10px 0;
+  font-size: 14px;
+  font-weight: 400;
   
 }
 .card p{
   color: #363033;
-  
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .card:hover {
@@ -243,7 +243,7 @@ body {
 
 .icon-btn:hover {
   transform: scale(1.1);
-  background: #ac3273; /* slightly darker on hover */
+  background: #ac3273; 
 }
 
 .icon-btn svg {
@@ -255,12 +255,27 @@ body {
 
 
 
-button {
-  padding: 10px;
-  background: #222;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
+.footer{
+        width: 97%;
+        padding: 30px 20px;
+        height: 20px;
+        background-color: #f0ecd3;
+        display: flex;
+        margin-top: 60px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-top: 1px solid #e0e0e0
+}
+.footer .site-credits {
+  margin: 10px 0; 
+  font-size: 16px; 
+  font-weight: 500;
+}
+.footer .Copyright{
+   margin: 5px 0;
+    font-size: 14px; 
+    color: #666;
+}

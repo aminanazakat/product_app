@@ -7,7 +7,10 @@ export default function ProductList({ onSelectProduct }) {
   const { filtered, search, setSearch, sort, setSort } = useProducts();
 
   return (
-    <div className="container">
+    <section className="container">
+      <div style={{ fontSize: "34px", margin: "60px 0", color: "#2c292aff", display: "flex", justifyContent: "center" }}>
+        Our Latest Products
+      </div>
       <div className="filter-bar">
         <SearchBar value={search} onChange={setSearch} />
         <SortDropdown value={sort} onChange={setSort} />
@@ -23,6 +26,6 @@ export default function ProductList({ onSelectProduct }) {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

@@ -18,7 +18,6 @@ export default function ProductDetail() {
 
   if (!product) return <p>Loading...</p>;
 
-  // Limit description to 200 chars
   const shortDesc =
     product.description.length > 200
       ? product.description.slice(0, 200) + "..."
@@ -29,10 +28,12 @@ export default function ProductDetail() {
       style={{
         display: "flex",
         flexWrap: "wrap",
+        position: "relative",
+        top: "-150px",
         padding: "40px",
         gap: "40px",
         background: "#fcebf7ff",
-        color: "#ac3273",
+        color: "#363033",
         minHeight: "80vh",
         alignItems: "center",
         justifyContent: "center",
@@ -59,9 +60,9 @@ export default function ProductDetail() {
         {/* Rating */}
         <div style={{ marginBottom: "15px" }}>
           {Array.from({ length: Math.round(product.rating.rate) }).map((_, i) => (
-            <FaStar key={i} color="#f500c0ff" />
+            <FaStar key={i} color="#ac3273" />
           ))}
-          <span style={{ marginLeft: "10px", color: "#ac3273" }}>
+          <span style={{ marginLeft: "10px", color: "#363033" }}>
             ({product.rating.count} reviews)
           </span>
         </div>
